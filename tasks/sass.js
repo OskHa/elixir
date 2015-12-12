@@ -28,7 +28,7 @@ var gulpTask = function(src, output, options) {
             pluginOptions: options || config.css.sass.pluginOptions
         });
     })
-    .watch(paths.src.baseDir + '/**/*.scss')
+    .watch(paths.src.baseDir + '/**/*.{scss, sass}')
     .ignore(paths.output.path);
 };
 
